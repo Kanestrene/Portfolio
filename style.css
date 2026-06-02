@@ -44,8 +44,8 @@ section {
 
 .project-intro {
     display: grid;
-    grid-template-columns: 190px 1fr;
-    gap: 20px;
+    grid-template-columns: 150px 1fr;
+    gap: 18px;
     align-items: start;
 }
 
@@ -60,20 +60,41 @@ section {
 }
 
 .project-video-row {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 240px));
     gap: 12px;
+    justify-content: start;
     margin-top: 18px;
+}
+
+.project-clip {
+    margin: 0;
+    padding: 10px;
+    border: 1px solid #30363d;
+    border-radius: 8px;
+    background-color: #0f1117;
+}
+
+.project-clip figcaption {
+    color: #8b949e;
+    font-size: 13px;
+    margin-top: 8px;
 }
 
 .project-video {
     display: block;
-    width: min(100%, 280px);
-    aspect-ratio: 16 / 9;
-    border: 1px solid #30363d;
-    border-radius: 8px;
-    background-color: #0f1117;
+    width: 100%;
+    border-radius: 6px;
+    background-color: #010409;
     object-fit: contain;
+}
+
+.project-video-live {
+    aspect-ratio: 331 / 293;
+}
+
+.project-video-wide {
+    aspect-ratio: 16 / 9;
 }
 
 .links a {
@@ -95,7 +116,7 @@ section {
         max-height: 190px;
     }
 
-    .project-video {
-        width: 100%;
+    .project-video-row {
+        grid-template-columns: 1fr;
     }
 }
