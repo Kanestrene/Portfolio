@@ -9,132 +9,262 @@
 </head>
 
 <body>
+    <header class="site-hero" id="top">
+        <nav class="site-nav" aria-label="Main navigation">
+            <a class="brand" href="#top">Pedro Lopes</a>
 
-    <header>
-        <h1>Pedro Lopes</h1>
-        <p>Robotics Engineering MSc Student</p>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
 
-        <div class="links">
-            <a href="https://github.com/Kanestrene" target="_blank">GitHub</a>
-            <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+        <div class="hero-content">
+            <p class="eyebrow">Robotics Engineering MSc Student</p>
+            <h1>Pedro Lopes</h1>
+
+            <p class="hero-lead">
+                I build autonomous robotic systems across control, perception,
+                simulation and real hardware.
+            </p>
+
+            <div class="hero-actions">
+                <a class="button button-primary" href="#projects">View projects</a>
+                <a class="button button-secondary" href="https://github.com/Kanestrene" target="_blank" rel="noreferrer">GitHub</a>
+            </div>
+
+            <div class="hero-focus" aria-label="Portfolio focus areas">
+                <div>
+                    <span>Autonomy</span>
+                    <strong>CBF / CLF control</strong>
+                </div>
+
+                <div>
+                    <span>Robotics</span>
+                    <strong>ROS, SLAM, LiDAR</strong>
+                </div>
+
+                <div>
+                    <span>Automation</span>
+                    <strong>PLC and hardware</strong>
+                </div>
+            </div>
         </div>
     </header>
 
-    <section>
-        <h2>About Me</h2>
+    <main>
+        <section class="section about-section" id="about">
+            <div class="section-heading">
+                <p class="eyebrow">About</p>
+                <h2>Robotics projects built from theory to test bench.</h2>
+            </div>
 
-        <p>
-            Robotics Engineering MSc student focused on autonomous systems,
-            computer vision, control systems and embedded robotics.
-        </p>
-    </section>
+            <div class="about-layout">
+                <p class="about-copy">
+                    Robotics Engineering MSc student focused on autonomous systems,
+                    computer vision, control systems and embedded robotics. My work
+                    combines optimization-based control, perception pipelines and
+                    electromechanical prototyping.
+                </p>
 
-    <section>
-        <h2>Projects</h2>
+                <div class="focus-grid">
+                    <article class="focus-item">
+                        <span>01</span>
+                        <h3>Control</h3>
+                        <p>Optimization, safety filters and closed-loop behavior for autonomous vehicles.</p>
+                    </article>
 
-        <div class="project-card">
-            <div class="project-intro">
-                <img class="project-thumbnail" src="media/RacingCar/carro.jpeg" alt="Autonomous racing car prototype" loading="lazy">
+                    <article class="focus-item">
+                        <span>02</span>
+                        <h3>Perception</h3>
+                        <p>LiDAR, SLAM and mapping workflows for mobile robotics.</p>
+                    </article>
 
-                <div>
-                    <h3>Autonomous Racing Car</h3>
-
-                    <p>
-                        Autonomous racing controller using CBFs, CLFs and optimization-based control.
-                    </p>
-
-                    <p><b>Technologies:</b> Python, Control Systems, Machine Learning</p>
+                    <article class="focus-item">
+                        <span>03</span>
+                        <h3>Hardware</h3>
+                        <p>Mechanical assembly, PLC logic and operator-facing industrial automation.</p>
+                    </article>
                 </div>
             </div>
+        </section>
 
-            <div class="project-video-row">
-                <figure class="project-clip">
-                    <video class="project-video project-video-live" controls muted playsinline preload="metadata" poster="media/RacingCar/carro.jpeg">
-                        <source src="media/RacingCar/Collision_Avoidance_Live_H264.mp4" type="video/mp4">
-                    </video>
-                    <figcaption>Live demo</figcaption>
-                </figure>
-
-                <figure class="project-clip">
-                    <video class="project-video project-video-wide" controls muted playsinline preload="metadata">
-                        <source src="media/RacingCar/Collision_Avoidance.mp4" type="video/mp4">
-                    </video>
-                    <figcaption>Collision avoidance</figcaption>
-                </figure>
+        <section class="section projects-section" id="projects">
+            <div class="section-heading">
+                <p class="eyebrow">Selected Work</p>
+                <h2>Projects</h2>
             </div>
-        </div>
 
-        <div class="project-card">
-            <h3>Multi-Robot Warehouse System</h3>
+            <div class="projects-list">
+                <article class="project-card">
+                    <div class="project-copy">
+                        <p class="project-kicker">Autonomous systems</p>
+                        <h3>Autonomous Racing Car</h3>
 
-            <p>
-                Multi-robot warehouse coordination system using LiDAR perception,
-                SLAM and path planning.
-            </p>
+                        <p>
+                            Autonomous racing controller using CBFs, CLFs and
+                            optimization-based control for collision avoidance.
+                        </p>
 
-            <p><b>Technologies:</b> ROS, LiDAR, EKF, Path Planning</p>
+                        <div class="tag-list">
+                            <span>Python</span>
+                            <span>Control Systems</span>
+                            <span>Machine Learning</span>
+                            <span>Safety Control</span>
+                        </div>
+                    </div>
 
-            <div class="project-video-row">
-                <figure class="project-clip">
-                    <video class="project-video project-video-wide" controls muted playsinline preload="metadata">
-                        <source src="media/Robot@Factory/R@F_Robot.mp4" type="video/mp4">
-                    </video>
-                    <figcaption>Robot run</figcaption>
-                </figure>
+                    <div class="project-showcase">
+                        <img class="project-cover" src="media/RacingCar/carro.jpeg" alt="Autonomous racing car prototype" loading="lazy">
 
-                <figure class="project-clip">
-                    <video class="project-video project-video-wide" controls muted playsinline preload="metadata">
-                        <source src="media/Robot@Factory/R@F_Rviz2.mp4" type="video/mp4">
-                    </video>
-                    <figcaption>RViz view</figcaption>
-                </figure>
+                        <div class="media-strip">
+                            <figure>
+                                <video class="project-video project-video-live" controls muted playsinline preload="metadata" poster="media/RacingCar/carro.jpeg">
+                                    <source src="media/RacingCar/Collision_Avoidance_Live_H264.mp4" type="video/mp4">
+                                </video>
+                                <figcaption>Live demo</figcaption>
+                            </figure>
 
-                <figure class="project-clip">
-                    <video class="project-video project-video-wide" controls muted playsinline preload="metadata">
-                        <source src="media/Robot@Factory/robot@factory.mp4" type="video/mp4">
-                    </video>
-                    <figcaption>Factory cell</figcaption>
-                </figure>
+                            <figure>
+                                <video class="project-video project-video-wide" controls muted playsinline preload="metadata">
+                                    <source src="media/RacingCar/Collision_Avoidance.mp4" type="video/mp4">
+                                </video>
+                                <figcaption>Collision avoidance</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-copy">
+                        <p class="project-kicker">Multi-robot systems</p>
+                        <h3>Multi-Robot Warehouse System</h3>
+
+                        <p>
+                            Multi-robot warehouse coordination system using LiDAR
+                            perception, SLAM and path planning.
+                        </p>
+
+                        <div class="tag-list">
+                            <span>ROS</span>
+                            <span>LiDAR</span>
+                            <span>EKF</span>
+                            <span>Path Planning</span>
+                        </div>
+                    </div>
+
+                    <div class="project-showcase">
+                        <video class="project-cover project-cover-video" controls muted playsinline preload="metadata">
+                            <source src="media/Robot@Factory/R@F_Robot.mp4" type="video/mp4">
+                        </video>
+
+                        <div class="media-strip media-strip-three">
+                            <figure>
+                                <video class="project-video project-video-wide" controls muted playsinline preload="metadata">
+                                    <source src="media/Robot@Factory/R@F_Rviz2.mp4" type="video/mp4">
+                                </video>
+                                <figcaption>RViz view</figcaption>
+                            </figure>
+
+                            <figure>
+                                <video class="project-video project-video-wide" controls muted playsinline preload="metadata">
+                                    <source src="media/Robot@Factory/robot@factory.mp4" type="video/mp4">
+                                </video>
+                                <figcaption>Factory cell</figcaption>
+                            </figure>
+
+                            <figure>
+                                <video class="project-video project-video-wide" controls muted playsinline preload="metadata">
+                                    <source src="media/Robot@Factory/R@F_Sketch.mp4" type="video/mp4">
+                                </video>
+                                <figcaption>System sketch</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card project-card-compact">
+                    <div class="project-copy">
+                        <p class="project-kicker">Industrial automation</p>
+                        <h3>Folding Machine</h3>
+
+                        <p>
+                            Industrial folding machine prototype integrating a custom
+                            mechanical frame, operator controls and PLC-based automation.
+                        </p>
+
+                        <div class="tag-list">
+                            <span>Siemens PLC</span>
+                            <span>Industrial Automation</span>
+                            <span>Electromechanics</span>
+                            <span>Mechanical Design</span>
+                        </div>
+                    </div>
+
+                    <div class="project-showcase">
+                        <video class="project-cover project-cover-video" controls muted playsinline preload="metadata" poster="media/FoldingMachine/1625582791350.jpg">
+                            <source src="media/FoldingMachine/1625171177957.mp4" type="video/mp4">
+                        </video>
+
+                        <div class="media-strip media-strip-three media-strip-compact">
+                            <figure>
+                                <img class="project-image" src="media/FoldingMachine/1625582791350.jpg" alt="Folding machine prototype" loading="lazy">
+                                <figcaption>Prototype</figcaption>
+                            </figure>
+
+                            <figure>
+                                <img class="project-image" src="media/FoldingMachine/1624986182193.jpg" alt="Folding machine electrical cabinet" loading="lazy">
+                                <figcaption>Electrical cabinet</figcaption>
+                            </figure>
+
+                            <figure>
+                                <img class="project-image" src="media/FoldingMachine/1622581863965.jpg" alt="Folding machine aluminum frame" loading="lazy">
+                                <figcaption>Mechanical frame</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card project-card-slim">
+                    <div class="project-copy">
+                        <p class="project-kicker">Mapping and localization</p>
+                        <h3>Mini SLAM Project</h3>
+
+                        <p>
+                            Compact SLAM demo focused on mapping and localization
+                            workflows for mobile robotics.
+                        </p>
+
+                        <div class="tag-list">
+                            <span>SLAM</span>
+                            <span>Mapping</span>
+                            <span>Robotics Simulation</span>
+                        </div>
+                    </div>
+
+                    <div class="project-showcase">
+                        <video class="project-cover project-cover-video" controls muted playsinline preload="metadata">
+                            <source src="media/MiniSLAMProject/MiniSLAMProject.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </article>
             </div>
-        </div>
+        </section>
 
-        <div class="project-card">
-            <div class="project-intro">
-                <img class="project-thumbnail" src="media/FoldingMachine/1625582791350.jpg" alt="Folding machine prototype" loading="lazy">
-
+        <section class="section contact-section" id="contact">
+            <div class="contact-panel">
                 <div>
-                    <h3>Folding Machine</h3>
+                    <p class="eyebrow">Contact</p>
+                    <h2>Open to robotics, automation and autonomous systems work.</h2>
+                </div>
 
-                    <p>
-                        Industrial folding machine prototype integrating a custom mechanical frame,
-                        operator controls and PLC-based automation.
-                    </p>
-
-                    <p><b>Technologies:</b> Siemens PLC, Industrial Automation, Electromechanics, Mechanical Design</p>
+                <div class="contact-links">
+                    <a class="button button-primary" href="https://github.com/Kanestrene" target="_blank" rel="noreferrer">GitHub</a>
+                    <a class="button button-secondary" href="https://www.linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a>
                 </div>
             </div>
-
-            <div class="project-video-row project-media-row-compact">
-                <figure class="project-clip">
-                    <video class="project-video project-video-wide" controls muted playsinline preload="metadata" poster="media/FoldingMachine/1625582791350.jpg">
-                        <source src="media/FoldingMachine/1625171177957.mp4" type="video/mp4">
-                    </video>
-                    <figcaption>Prototype demo</figcaption>
-                </figure>
-
-                <figure class="project-clip">
-                    <img class="project-image" src="media/FoldingMachine/1624986182193.jpg" alt="Folding machine electrical cabinet" loading="lazy">
-                    <figcaption>Electrical cabinet</figcaption>
-                </figure>
-
-                <figure class="project-clip">
-                    <img class="project-image" src="media/FoldingMachine/1622581863965.jpg" alt="Folding machine aluminum frame" loading="lazy">
-                    <figcaption>Mechanical frame</figcaption>
-                </figure>
-            </div>
-        </div>
-
-    </section>
-
+        </section>
+    </main>
 </body>
 </html>
