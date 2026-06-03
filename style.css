@@ -372,12 +372,6 @@ a {
     font-size: 13px;
 }
 
-.racing-video-strip .project-video {
-    height: 100%;
-    aspect-ratio: 16 / 9;
-    object-fit: cover;
-}
-
 .project-video-live {
     aspect-ratio: 331 / 293;
 }
