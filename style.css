@@ -514,10 +514,6 @@ a {
         grid-template-columns: 1fr;
     }
 
-    .project-photo-pair {
-        grid-template-columns: 1fr;
-    }
-
     .project-showcase {
         max-width: 100%;
     }
