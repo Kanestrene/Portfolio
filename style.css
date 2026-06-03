@@ -97,6 +97,15 @@ section {
     aspect-ratio: 16 / 9;
 }
 
+.project-image {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: 6px;
+    background-color: #010409;
+    object-fit: cover;
+}
+
 .links a {
     color: #58a6ff;
     margin: 0 10px;
