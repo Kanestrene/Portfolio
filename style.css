@@ -67,6 +67,11 @@ section {
     margin-top: 18px;
 }
 
+.project-video-row.project-media-row-compact {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 170px));
+    gap: 10px;
+}
+
 .project-clip {
     margin: 0;
     padding: 10px;
@@ -127,5 +132,9 @@ section {
 
     .project-video-row {
         grid-template-columns: 1fr;
+    }
+
+    .project-video-row.project-media-row-compact {
+        grid-template-columns: repeat(auto-fit, minmax(140px, 170px));
     }
 }
