@@ -43,7 +43,7 @@ a {
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    background-image: url("media/RacingCar/carrointerior.jpeg");
+    background-image: url("media/Robot@Factory/Robos.jpeg");
     background-size: cover;
     background-position: center;
     border-bottom: 1px solid var(--line);
