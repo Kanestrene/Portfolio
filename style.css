@@ -334,6 +334,17 @@ a {
     object-fit: cover;
 }
 
+.project-photo-pair {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+}
+
+.project-photo-pair .project-cover {
+    height: 100%;
+    max-height: 260px;
+}
+
 .project-cover-video,
 .project-video {
     object-fit: contain;
@@ -359,6 +370,12 @@ a {
     margin-top: 7px;
     color: var(--muted);
     font-size: 13px;
+}
+
+.racing-video-strip .project-video {
+    height: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
 }
 
 .project-video-live {
@@ -494,6 +511,10 @@ a {
 
     .media-strip,
     .media-strip-three {
+        grid-template-columns: 1fr;
+    }
+
+    .project-photo-pair {
         grid-template-columns: 1fr;
     }
 
